@@ -13,10 +13,10 @@ namespace SimpleCRUDApp.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TestEnt : DbContext
+    public partial class Ent : DbContext
     {
-        public TestEnt()
-            : base("name=TestEnt")
+        public Ent()
+            : base("name=Ent")
         {
         }
     
