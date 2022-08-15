@@ -35,9 +35,15 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            <button class="btn btn-info">
+                @Html.ActionLink("Edit", "Edit", new {@class="text-dark" , id = item.ID}) 
+            </button> |
+            <button class="btn btn-success">
+                @Html.ActionLink("Details", "Details", new {@class="text-dark", id = item.ID }) 
+            </button> |
+            <button class="btn btn-danger">
+                @Html.ActionLink("Delete", "Delete", new {@class="text-dark", id = item.ID })
+            </button>
         </td>
     </tr>
 }
